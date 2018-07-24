@@ -2,15 +2,30 @@
 <html lang="en">
 
   <head>
+    <style>
+      body {
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Hello</title>
-    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
+    <script>
+  UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
+  UPLOADCARE_TABS = 'file';
+</script>
+
+<script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
   </head>
 
   <body>
     <h1>Hello</h1>
-    <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="a13c2e7766453a4d3f69" data-images-only />
+    <input
+  type="hidden"
+  role="uploadcare-uploader"
+  name="content"
+  data-multiple="true"
+  data-multiple-min="1" />
   </body>
 
 </html>
