@@ -45,7 +45,7 @@
     </script>
     <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
 	  <script>
-	   var widget = uploadcare.Widget();
+	   var widget = uploadcare.Widget("#sdjvhbjsbvj");
 widget.onUploadComplete(function(info) { 
   alert("Done");
 });
@@ -59,7 +59,7 @@ widget.onUploadComplete(function(info) {
     <div style="display:none;opacity:0" id="button_main">
       <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;">
         <div class="uploader-green-button">
-          <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" data-multiple-min="1" />
+          <input type="hidden" role="uploadcare-uploader" id="sdjvhbjsbvj" name="content" data-multiple="true" data-multiple-min="1" />
         </div>
       </div>
     </div>
