@@ -1,80 +1,90 @@
 <!doctype html>
 <html lang="en">
+<head>
+  <script>
+    (function(h, o, t, j, a, r) {
+      h.hj = h.hj || function() {
+        (h.hj.q = h.hj.q || []).push(arguments)
+      };
+      h._hjSettings = {
+        hjid: 957000,
+        hjsv: 6
+      };
+      a = o.getElementsByTagName('head')[0];
+      r = o.createElement('script');
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
-  <head>
-    <!-- Hotjar Tracking Code for miltonsch.github.io/ -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:957000,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-    <style>
-      .uploader-green-button .uploadcare--widget__button_type_open {
-        background-color: #16d061;
-      }
+  </script>
+  <style>
+    .uploader-green-button .uploadcare--widget__button_type_open {
+      background-color: #16d061;
+      border-radius: 0;
+      font-size: 24px
+    }
 
-    </style>
-    <script>
-      UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
-      UPLOADCARE_TABS = 'file';
+  </style>
 
-    </script>
+  <script>
+    UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
+    UPLOADCARE_TABS = 'file';
 
-    <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  </script>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-
-  <body>
-    <nav class="navbar navbar-dark bg-dark">
-      <span class="navbar-brand mb-0 h1">Dr. Schultheiß</span>
-    </nav>
-    <p style="font-size:14px;background:#16d061;margin:0;padding:7px;color:white;padding-left:1rem">Secure Gateway</p>
-    <div style="margin:30px;">
-      <h2 style="margin-bottom:20px">
-        Upload a Photo
-      </h2>
+  <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
 
 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body style="margin:0;">
+  <div style="display:none;opacity:0" id="button_main">
+    <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;">
       <div class="uploader-green-button">
         <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" data-multiple-min="1" />
       </div>
-
-
-      <script>
-        function a() {
-          document.getElementById("aaaaaaa").style.display = "block";
-          document.getElementById("d").style.display = "none";
-        }
-
-      </script>
-
-      <p style="margin-top:15px;margin-bottom:5px;color: #16d061;font-weight:600">Continue with confidence.</p>
-      <p style="margin-top:0;font-size:14px">This service uses 256-bit AES encryption to securely and anonymously handle the information you provide. <a onclick="a()" href="#m" id="d">Learn more</a></p>
-
-   
-
-      <p style="font-size:14px;display:none;" id="aaaaaaa">Everyone values their privacy. That's why we serve this page via HTTPS. This mitigates various <a href="https://en.wikipedia.org/wiki/Packet_analyzer" target="_blank">attacks</a> on insecure networks and can do much more to keep your private
-        information private. When you interact with this website, we also keep you anonymous by storing no cookies on your device from this domain.</p>
-
     </div>
+  </div>
 
+  <div id="text_main">
+    <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;">
+      <h1>Hey, there!</h1>
+    </div>
+  </div>
 
+  <div style="position:absolute;bottom:20px;left:20px;right:20px;">
+    <p style="margin:0;font-size:13px;line-height:18px">
+      <b>Continue with confidence.</b> This service uses 256-bit AES military-grade encryption to securely and anonymously handle the information you provide.
+    </p>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <script>
+    $("#text_main").animate({
+      opacity: 0
+    }, 1000);
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-  </body>
+    setTimeout(function() {
+      document.getElementById("text_main").style.display = "none";
+    }, 1000)
+
+    document.getElementById("button_main").style.display = "block";
+    $("#button_main").animate({
+      opacity: 1
+    }, 1000);
+
+  </script>
+</body>
+
 
 </html>
