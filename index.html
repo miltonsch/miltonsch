@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="en">
-  <head>
-     <script>
-  UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
-  UPLOADCARE_TABS = 'file';
-</script>
 
-<script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
+  <head>
+    <style>
+      .uploader-green-button .uploadcare--widget__button_type_open {
+        background-color: #16d061;
+      }
+
+    </style>
+    <script>
+      UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
+      UPLOADCARE_TABS = 'file';
+
+    </script>
+
+    <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,18 +24,46 @@
 
     <title>Hello, world!</title>
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
-  <input
-  type="hidden"
-  role="uploadcare-uploader"
-  name="content"
-  data-multiple="true"
-  data-multiple-min="1" />
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Dr. Schultheiß</span>
+    </nav>
+    <p style="font-size:14px;background:#16d061;margin:0;padding:7px;color:white;padding-left:1rem">Secure Gateway</p>
+    <div style="margin:30px;">
+      <h2 style="margin-bottom:20px">
+        Upload a Photo
+      </h2>
+
+
+      <div class="uploader-green-button">
+        <input type="hidden" role="uploadcare-uploader" name="content" data-multiple="true" data-multiple-min="1" />
+      </div>
+
+
+      <script>
+        function a() {
+          document.getElementById("aaaaaaa").style.display = "block";
+          document.getElementById("d").style.display = "none";
+        }
+
+      </script>
+
+      <p style="margin-top:15px;margin-bottom:5px;color: #16d061;font-weight:600">Continue with confidence.</p>
+      <p style="margin-top:0;font-size:14px">This service uses 256-bit AES encryption to securely and anonymously handle the information you provide. <a onclick="a()" href="#m" id="d">Learn more</a></p>
+
+   
+
+      <p style="font-size:14px;display:none;" id="aaaaaaa">Everyone values their privacy. That's why we serve this page via HTTPS. This mitigates various <a href="https://en.wikipedia.org/wiki/Packet_analyzer" target="_blank">attacks</a> on insecure networks and can do much more to keep your private
+        information private. When you interact with this website, we also keep you anonymous by storing no cookies on your device from this domain.</p>
+
+    </div>
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
+
 </html>
