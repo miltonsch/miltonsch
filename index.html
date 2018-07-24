@@ -76,10 +76,11 @@ setTimeout(function(){
   
     setTimeout(function() {
       document.getElementById("text_main").style.display = "none";
+       document.getElementById("button_main").style.display = "block";
+    $("#button_main").animate({opacity: 1}, 1000);
     }, 1000)
 
-    document.getElementById("button_main").style.display = "block";
-    $("#button_main").animate({opacity: 1}, 1000);
+    
   
 },1000);
   
