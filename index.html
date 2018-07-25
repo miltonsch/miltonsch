@@ -26,7 +26,7 @@
   <script>
   UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
   UPLOADCARE_TABS = 'file';
-  txt = "Add";
+  txt = "Upload Photos";
   UPLOADCARE_LOCALE_TRANSLATIONS = {
     buttons: {
       choose: {
@@ -49,12 +49,19 @@
   <style>
   .uploader-green-button .uploadcare--widget__button_type_open {
 
-    border-radius: 100%;
-    font-size: 16px;
+    color: rgba(255,255,255,1);
+    background: rgb(6,103,255); /* Old Browsers */
+    background: -webkit-linear-gradient(top left,rgb(6,103,255),rgb(5,152,250)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(top left,rgb(6,103,255),rgb(5,152,250)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(top left,rgb(6,103,255),rgb(5,152,250)); /*Fx 3.6-15*/
+    background: linear-gradient(top left, rgb(6,103,255), rgb(5,152,250)); /*Standard*/
+    padding:15px 40px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,106,237,.4);
+    margin-bottom:7px;
+    text-align: center;
 
-    height:70px;
-    width:70px;
-    padding:0px;
+
   }
 
   body {
@@ -78,20 +85,20 @@
 </head>
 
 
-<body style="background-color: #835EFF;background-image:linear-gradient(-200deg,#f5f6fa 0%, #f5f6fa 100%);">
+<body>
 
 
 
 
   <div style="display:none;opacity:0" id="button_main">
     <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;text-align:center;">
-      <div>
-      <div class="uploader-green-button">
-        <input type="hidden" role="uploadcare-uploader" id="sdjvhbjsbvj" name="content" data-multiple="true" data-multiple-min="1" />
-      </div>
+      <div style="margin: 100px 10vw;">
+        <div class="uploader-green-button">
+          <input type="hidden" role="uploadcare-uploader" id="sdjvhbjsbvj" name="content" data-multiple="true" data-multiple-min="1" />
+        </div>
 
-      <p style="font-size:13px;margin-top:20px;">Tap to Upload Photos</p>
-    </div>
+        <p style="font-size:13px;margin-top:20px;">You're anonymous and protected by 256-bit AES military-grade encryption.</p>
+      </div>
     </div>
   </div>
 
@@ -109,13 +116,6 @@
 
 
 
-
-  <div style="position:absolute;bottom:20px;left:20px;right:20px;color:#2f3640;display:none;opacity:0;" id="tiny_text">
-
-        <p style="margin:0;font-size:13px;line-height:16px;margin-bottom:4px"><b>Continue with confidence.</b></p>
-        <p style="margin:0;font-size:11px;line-height:16px">This service uses 256-bit AES military-grade encryption to securely and anonymously handle the information you provide.</p>
-
-  </div>
 
 
 
@@ -140,17 +140,14 @@
 
 
 
-      setTimeout(function() {
+    setTimeout(function() {
 
-        document.getElementById("button_main").style.display = "block";
-        $("#button_main").animate({opacity: 1}, 500);
+      document.getElementById("button_main").style.display = "block";
+      $("#button_main").animate({opacity: 1}, 500);
 
-        setTimeout(function() {
-          document.getElementById("tiny_text").style.display = "block";
-          $("#tiny_text").animate({opacity: 1}, 500);
-        }, 2000);
 
-      }, 3000);
+
+    }, 3000);
 
 
 
