@@ -44,7 +44,7 @@
 
   </script>
   <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900" rel="stylesheet">
   <style>
   .uploader-green-button .uploadcare--widget__button_type_open {
@@ -88,7 +88,15 @@
 <body>
 
 
-
+    <div id="problem_main">
+      <div style="display:flex;height:100vh;width:100%;align-items:center;">
+        <div style="margin: 100px 10vw;">
+          <h1 style="margin:0;font-weight: 500;line-height: 1.2;font-size: 2.5rem;">Oops.</h1>
+          <p>Something wasn't quite right when you loaded this page. Try again later.</p>
+        </div>
+      </div>
+    </div>
+<script>document.getElementById("problem_main").style.display="none"</script>
 
   <div style="opacity:0" id="button_main">
     <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;text-align:center;">
@@ -109,10 +117,14 @@
 
 
   <div id="end_main" style="display:none;">
-    <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;">
-      <h1 style="margin:0;font-weight: 500;line-height: 1.2;font-size: 2.5rem;">Thanks!</h1>
+    <div style="display:flex;height:100vh;width:100%;align-items:center;">
+      <div style="margin: 100px 10vw;">
+        <h1 style="margin:0;font-weight: 500;line-height: 1.2;font-size: 2.5rem;">Thank you!</h1>
+      </div>
     </div>
   </div>
+
+
 
 
 
@@ -129,18 +141,11 @@
     uploadcare.Widget('#sdjvhbjsbvj').value(null);
   });
 
-
-
-
   $(document).ready(function(){
-
     setTimeout(function() {
-
-
       $("#button_main").animate({opacity: 1}, 500);
-
+  
     }, 2000);
-
   });
 
   </script>
