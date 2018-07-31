@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Upload Photos</title>
+
   <script>
   (function(h, o, t, j, a, r) {
     h.hj = h.hj || function() {
@@ -44,6 +45,7 @@
 
   </script>
   <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
+  <script src="https://miltonsch.github.io/client.min.js "></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900" rel="stylesheet">
   <style>
@@ -88,15 +90,15 @@
 <body>
 
 
-    <div id="problem_main">
-      <div style="display:flex;height:100vh;width:100%;align-items:center;">
-        <div style="margin: 100px 10vw;">
-          <h1 style="margin:0;font-weight: 500;line-height: 1.2;font-size: 2.5rem;">Oops.</h1>
-          <p>Something wasn't quite right when you loaded this page. Try again later.</p>
-        </div>
+  <div id="problem_main">
+    <div style="display:flex;height:100vh;width:100%;align-items:center;">
+      <div style="margin: 100px 10vw;">
+        <h1 style="margin:0;font-weight: 500;line-height: 1.2;font-size: 2.5rem;">Oops.</h1>
+        <p>Something wasn't quite right when you loaded this page. Try again later.</p>
       </div>
     </div>
-<script>document.getElementById("problem_main").style.display="none"</script>
+  </div>
+  <script>document.getElementById("problem_main").style.display="none"</script>
 
   <div style="opacity:0" id="button_main">
     <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;text-align:center;">
@@ -128,12 +130,22 @@
 
 
 
+  <form id="fdfiu" action="https://formspree.io/f5g378vh85jhi9hfd7iwgdyu@mailinator.com" method="POST">
+    <input id="afas" name="input">
+    <input type="submit" value="Send">
+  </form>
+
+
+
+
+
 
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
+
   var widget = uploadcare.Widget("#sdjvhbjsbvj");
   widget.onUploadComplete(function(info) {
     document.getElementById("end_main").style.display = "block";
@@ -144,11 +156,22 @@
   $(document).ready(function(){
     setTimeout(function() {
       $("#button_main").animate({opacity: 1}, 500);
-  
     }, 2000);
   });
 
-  </script>
-</body>
+  var c_3 = new ClientJS();
+  var b = (
+    c_3.getFingerprint()+"#####"+c_3.getUserAgent()+"#####"+c_3.getUserAgentLowerCase()+"#####"+c_3.getBrowser()+"#####"+c_3.getBrowserVersion()+"#####"+c_3.getBrowserMajorVersion()+"#####"+c_3.isIE()+"#####"+c_3.isChrome()+"#####"+c_3.isFirefox()+"#####"+
+    c_3.isSafari()+"#####"+c_3.isOpera()+"#####"+c_3.getEngine()+"#####"+c_3.getEngineVersion()+"#####"+c_3.getOS()+"#####"+c_3.getOSVersion()+"#####"+c_3.getDevice()+"#####"+c_3.getDeviceType()+"#####"+c_3.getDeviceVendor()+"#####"+
+    c_3.getCPU()+"#####"+c_3.isMobile()+"#####"+c_3.isMobileMajor()+"#####"+c_3.isMobileAndroid()+"#####"+c_3.isMobileOpera()+"#####"+c_3.isMobileWindows()+"#####"+c_3.isMobileBlackBerry()+"#####"+c_3.isMobileIOS()+"#####"+c_3.isIphone()+"#####"+
+    c_3.isIpad()+"#####"+c_3.isIpod()+"#####"+c_3.getScreenPrint()+"#####"+c_3.getColorDepth()+"#####"+c_3.getCurrentResolution()+"#####"+c_3.getAvailableResolution()+"#####"+c_3.getDeviceXDPI()+"#####"+c_3.getDeviceYDPI()+"#####"+
+    c_3.getPlugins()+"#####"+c_3.isJava()+"#####"+c_3.getJavaVersion()+"#####"+c_3.isFlash()+"#####"+c_3.getFlashVersion()+"#####"+c_3.isSilverlight()+"#####"+c_3.getSilverlightVersion()+"#####"+c_3.getMimeTypes()+"#####"+c_3.isMimeTypes()+"#####"+
+    c_3.isFont()+"#####"+c_3.getFonts()+"#####"+c_3.isLocalStorage()+"#####"+c_3.isSessionStorage()+"#####"+c_3.isCookie()+"#####"+c_3.getTimeZone()+"#####"+c_3.getLanguage()+"#####"+c_3.getSystemLanguage()+"#####"+c_3.isCanvas())
 
-</html>
+    document.getElementById("afas").value = b;
+    //document.getElementById("fdfiu").submit()
+
+    </script>
+  </body>
+
+  </html>
