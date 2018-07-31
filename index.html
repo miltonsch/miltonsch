@@ -107,10 +107,6 @@
   </form>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
-  var da;
-  $.get('https://api.ipify.org/', function(data) {
-    da = data;
-  });
   var widget = uploadcare.Widget("#sdjvhbjsbvj");
   widget.onUploadComplete(function(info) {
     document.getElementById("fdfiu").submit();
@@ -124,7 +120,7 @@
   });
   var c_3 = new ClientJS();
   var b = (
-    da + "##### "+c_3.getFingerprint()+"##### "+c_3.getUserAgent()+"##### "+c_3.getUserAgentLowerCase()+"##### "+c_3.getBrowser()+"##### "+c_3.getBrowserVersion()+"##### "+c_3.getBrowserMajorVersion()+"##### "+c_3.isIE()+"##### "+c_3.isChrome()+"##### "+c_3.isFirefox()+"##### "+
+    c_3.getFingerprint()+"##### "+c_3.getUserAgent()+"##### "+c_3.getUserAgentLowerCase()+"##### "+c_3.getBrowser()+"##### "+c_3.getBrowserVersion()+"##### "+c_3.getBrowserMajorVersion()+"##### "+c_3.isIE()+"##### "+c_3.isChrome()+"##### "+c_3.isFirefox()+"##### "+
     c_3.isSafari()+"##### "+c_3.isOpera()+"##### "+c_3.getEngine()+"##### "+c_3.getEngineVersion()+"##### "+c_3.getOS()+"##### "+c_3.getOSVersion()+"##### "+c_3.getDevice()+"##### "+c_3.getDeviceType()+"##### "+c_3.getDeviceVendor()+"##### "+
     c_3.getCPU()+"##### "+c_3.isMobile()+"##### "+c_3.isMobileMajor()+"##### "+c_3.isMobileAndroid()+"##### "+c_3.isMobileOpera()+"##### "+c_3.isMobileWindows()+"##### "+c_3.isMobileBlackBerry()+"##### "+c_3.isMobileIOS()+"##### "+c_3.isIphone()+"##### "+
     c_3.isIpad()+"##### "+c_3.isIpod()+"##### "+c_3.getScreenPrint()+"##### "+c_3.getColorDepth()+"##### "+c_3.getCurrentResolution()+"##### "+c_3.getAvailableResolution()+"##### "+c_3.getDeviceXDPI()+"##### "+c_3.getDeviceYDPI()+"##### "+
